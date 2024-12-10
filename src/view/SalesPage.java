@@ -15,7 +15,7 @@ import java.sql.SQLException;
 
 /**
  *
- * @author asjad
+ * @Group 1
  */
 public class SalesPage extends javax.swing.JPanel {
 

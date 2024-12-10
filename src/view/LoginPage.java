@@ -19,7 +19,7 @@ import javax.swing.*;
 
 /**
  *
- * @author asjad
+ * @Group 1
  */
 public class LoginPage extends javax.swing.JFrame {
 

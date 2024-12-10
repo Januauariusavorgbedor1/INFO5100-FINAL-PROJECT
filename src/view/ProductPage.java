@@ -18,7 +18,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Asjad Iqbal
+ * @Group 1 Iqbal
  */
 public class ProductPage extends javax.swing.JPanel {
 

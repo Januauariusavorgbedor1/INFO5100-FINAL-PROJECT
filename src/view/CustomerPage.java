@@ -15,7 +15,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author asjad
+ * @author Group 1
  */
 public class CustomerPage extends javax.swing.JPanel {
         String NewID;

@@ -56,7 +56,8 @@ public class LoginPage extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Login");
-        setBackground(new java.awt.Color(102, 102, 102));
+        setAutoRequestFocus(false);
+        setBackground(java.awt.Color.lightGray);
         setBounds(new java.awt.Rectangle(500, 100, 0, 0));
         setName("loginFrame"); // NOI18N
 
@@ -192,11 +193,11 @@ public class LoginPage extends javax.swing.JFrame {
     // **APPLICATION STARTS EXECUTION HERE**
     public static void main(String[] args) {
         // setting UI theme and LookAndFeel of the application
-        try {
-            javax.swing.UIManager.setLookAndFeel(new FlatMaterialDarkerIJTheme());
-            } catch (UnsupportedLookAndFeelException ex) {
-            Logger.getLogger(LoginPage.class.getName()).log(Level.SEVERE, null, ex);
-        } 
+//        try {
+//            javax.swing.UIManager.setLookAndFeel(new FlatMaterialDarkerIJTheme());
+//            } catch (UnsupportedLookAndFeelException ex) {
+//            Logger.getLogger(LoginPage.class.getName()).log(Level.SEVERE, null, ex);
+//        } 
        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {

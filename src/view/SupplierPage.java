@@ -16,7 +16,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @Group 1
+ * @author Group 1
  */
 public class SupplierPage extends javax.swing.JPanel {
 String NewSupplier;

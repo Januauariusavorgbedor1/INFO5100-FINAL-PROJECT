@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
 
 /**
  *
- * @Group 1
+ * @author Group 1
  */
 
 // Main frame for the application after successful login

@@ -11,7 +11,7 @@ import java.sql.SQLException;
 
 /**
  *
- * @Group 1
+ * @author Group 1
  */
 public class UserLogsPage extends javax.swing.JPanel {
 

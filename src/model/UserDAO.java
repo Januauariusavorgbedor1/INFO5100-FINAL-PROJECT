@@ -17,7 +17,7 @@ import java.util.Vector;
 
 /**
  *
- * @Group 1
+ * @author Group 1
  */
 
 // Data Access Object class for Users

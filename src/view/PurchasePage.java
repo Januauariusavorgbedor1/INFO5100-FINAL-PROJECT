@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @Group 1
+ * @author Group 1
  */
 public class PurchasePage extends javax.swing.JPanel {
 

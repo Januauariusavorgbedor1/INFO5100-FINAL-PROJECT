@@ -1,153 +1,76 @@
 # Inventory Management System
 
-This is an Inventory Management System built in the form of a GUI desktop application developed in ***Java*** using ***MySQL*** as its database.
-The GUI was designed using **Swing** and the database connectivity was managed using **JDBC API**.
+## Overview
 
+The **Inventory Management System** is a GUI desktop application designed for small to mid-sized stores. Developed in Java with a MySQL database, this application provides efficient inventory and transaction management. It features a user-friendly interface built using Swing and connects to the database via the JDBC API.
 
-This application can be used by any small to mid-sized stores to easily maintain and manage an inventory of all their-
-- Products 
-- Customers 
-- Suppliers
-- Users 
-- Transactions
+## Key Features
 
+- **Inventory Management**: Easily manage stock levels for all products.
+- **Transaction Management**: Record and track sales and purchase transactions.
+- **User Roles**:
+  - **Administrator**: Full control over the system, including user management.
+  - **Employee**: Limited access for inventory and transaction management.
+- **Automatic Stock Updates**: Inventory levels are updated automatically with every transaction.
+- **Search Functionality**: Quickly retrieve data using the integrated search feature.
+- **Simplified Sales Process**: Enter product codes to retrieve relevant details automatically.
+- **User Logs**: Maintain a log of user activities for enhanced accountability.
 
-## Features of the Application
+## Application Architecture
 
-- Users can manage inventory and stock of all the products available in their store.
-- Users can manage all sales and purchase transactions made by the store.
-- Supports two user types:
-  1. Administrator
-  2. Employee
-  
-  [Admins have the ability to manage all other personnel.]
-- Any transaction made automatically handles the stock availability in the inventory.
-- Each section includes a search feature to make it easier for users to view the data they want to see.
-- Users only need to enter the product code while making a sale and all the relevant details will be retrieved from the database automatically.
-- Maintains a time log of all the users using the application.
+- **Frontend**: Swing for graphical user interface.
+- **Backend**: Java for application logic.
+- **Database**: MySQL for data storage and retrieval.
+- **Connectivity**: JDBC API for seamless interaction between the application and the database.
 
-## How to download and run the software
+## The Problem We Are Solving
 
-#### Minimum Requirements: JDK or JRE version 16.
+### Challenges Faced by Small to Mid-sized Stores:
 
-1. Download and unzip the ZIP folder: [InventoryManagement.zip](InventoryManagement.zip)
-2. Download the [SQL dump file](SQL/InventoryDB.sql)
-3. Import the SQL dump file using MySQL Workbench to locally create the sample schema and tables associated with this software.
-4. After the inventory schema has been locally created, you can go ahead and run the JAR file (InventoryManagement.jar) included in the zip folder.
-5. Default credentials for the connection to MySQL database is:
-    - Username: root
-    - Password: root
-  
-    Incase your database uses a different username and password to connect, follow these steps:
-    1. Go to the `lib` folder in the zip file that you downloaded.
-    2. Open the XML source file `DBCredentials.xml`.
-    3. Simply change the values of the two `entry` tags with values `username` and `password` from "root" to whatever username and password you are using. (Ln 12 and 13)
-        ```xml
-          <properties>
-          <comment>Credentials for the database.</comment>
-            <entry key="username">root</entry>
-            <entry key="password">root</entry>
-          </properties>
-        ```
-6. Once these credentials match, the JAR file should execute without any issues provided that you have the minimum JRE.
-7. You can log into the application using Username: `root` and Password: `root`.
+- Manual inventory tracking prone to errors.
+- Time-consuming processes for maintaining sales and purchase records.
+- Difficulty in monitoring stock levels effectively.
+- Limited visibility into user activities and transactions.
 
-### Note:
+### Our Solution:
 
-All the project dependencies are available in the [`lib`](lib/) directory.
+- **Automation**: Automatically updates inventory with each transaction.
+- **Efficiency**: Simplifies data entry using product codes for faster processing.
+- **Real-Time Insights**: Provides real-time visibility into stock levels and transaction details.
+- **Accountability**: Tracks user activities with a comprehensive log system.
 
-***
+## Features Overview
 
+### General Features:
 
-## Application Preview
+- **Login Page**: Secure authentication to protect data.
+- **Dashboard**: Centralized overview of all operations.
 
-### Login Page
+### Inventory Management:
 
-The login page takes in the credentials entered by the user and verifies with the database.
+- **Products**: Add, edit, and delete product records.
+- **Current Stock**: View inventory availability in real-time.
+- **Suppliers**: Manage supplier details efficiently.
 
-![loginpage](screenshots/login.png)
+### Customer and Transaction Management:
 
-### Dashboard/Welcome Page
+- **Customers**: Add and manage customer information.
+- **Sales**: Streamlined sales process using product codes.
+- **Purchase**: Record and view purchase transactions with ease.
 
-The landing page of the application after a successful login.
+### Administrative Features:
 
-![welcome](screenshots/welcome.png)
+- **User Management**: Admins can add or delete users.
+- **User Logs**: Detailed log of login and logout times.
 
-### Products
+## Conclusion
 
-The products section allows the user to add, edit and delete products from the store's inventory.
+### Summary:
 
-![products](screenshots/products.png)
+- The Inventory Management System enhances operational efficiency for small to mid-sized stores.
+- It is robust, user-friendly, and designed to address common inventory challenges.
 
-### Current Stock
+### Future Enhancements:
 
-This section allows the user to check the availability of every item.
-
-![stock](screenshots/stock.png)
-
-### Suppliers
-
-Here, the user can manage and manipulate the record of all the suppliers associated with the store.
-
-![suppliers](screenshots/suppliers.png)
-
-### Customers
-
-Allows user to add new customers or update/delete existing customers in the database.
-
-![customers](screenshots/customers.png)
-
-### Sales
-
-This section is where users can sell a product and manage all the sales transactions. 
-The user only needs to enter the customer and product code and the software will handle the rest, showing all the necessary details like available stock and selling price of the product. 
-
-![sales](screenshots/sales.png)
-
-### Purchase
-
-This section is where users can view purchase logs and enter new purchase transactions. Similar to the sales section, this section only requires the user to enter the product code and the details that are already available in the database will immediately be displayed in the respective spaces.
-
-![purchase](screenshots/purchase.png)
-
-### Users
-
-This section is only available to **ADMINISTRATORS**. It allows them to view, add and delete any users.
-
-![users](screenshots/users.png)
-
-### User Logs
-
-Stores and shows the administrator a log of all the users that have previously logged in, including their login time and logout time.
-
-![logs](screenshots/logs.png)
-
-***
-
-## Technologies Used
-
-The following are the technologies that have been used in the development of this project. All of them are free to use.
-  - JetBrains IntelliJ IDE
-  - Apache NetBeans IDE (for the GUI designer)
-  - MySQL Server and Workbench
-  - JDK 16
-
-## ER Diagram
-
-The ER diagram for the sample schema that has been used in the application.
-
-![erdiag](screenshots/ERDiagram.png)
-
-## Source Code
-
-The software code has been divided into four different packages:
-  - Data Access Object (DAO): Contains the data access layer of the software that interacts directly with the database and its tables. Used for retrieval and modification of data.
-  - Data Transfer Object (DTO): Contains the data transfer layer that allows the data to be transferred between the data access layer and the UI layer.
-  - Database: Contains the ConnectionFactory class that retrieves the database connection and verifies user credentials for the application.
-  - User Interface (UI): Contains all the GUI classes making up the interface layer of the software.
-
-Click [here](src/com/inventory/) to skip directly to the source code.
-
-## Work-in-Progress
-
-This project is a work in progress and more features are yet to be added with new technologies. 
+- Integrate analytics and reporting features for better decision-making.
+- Expand capabilities to include integration with online sales platforms.

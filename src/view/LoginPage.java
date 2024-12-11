@@ -56,7 +56,8 @@ public class LoginPage extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Login");
-        setBackground(new java.awt.Color(102, 102, 102));
+        setAutoRequestFocus(false);
+        setBackground(java.awt.Color.lightGray);
         setBounds(new java.awt.Rectangle(500, 100, 0, 0));
         setName("loginFrame"); // NOI18N
 

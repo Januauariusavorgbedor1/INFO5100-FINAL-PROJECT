@@ -18,7 +18,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Group1
+ * @author Group 1
  */
 
 // Data Access Object for Customers

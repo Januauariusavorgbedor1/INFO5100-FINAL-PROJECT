@@ -18,7 +18,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @Group 1
+ * @author Group 1
  */
 
 // Data Access Object for Products, Purchase, Stock and Sales

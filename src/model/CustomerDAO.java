@@ -18,7 +18,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @Group 1
+ * @author Group 1
  */
 
 // Data Access Object for Customers
@@ -65,7 +65,7 @@ public class CustomerDAO {
     
 
 
-    // Methods to add new custoemr
+    // Methods to add new custoemr.
     public void addCustomerDAO(CustomerDTO customerDTO) {
         try {
             String query = "SELECT * FROM customers WHERE fullname='"
@@ -100,7 +100,7 @@ public class CustomerDAO {
 
     }
 
-    // Method to edit existing customer details
+    // Method to edit existing customer details.
     public  void editCustomerDAO(CustomerDTO customerDTO) {
         try {
             String query = "UPDATE customers SET fullname=?,location=?,phone=? WHERE customercode=?";

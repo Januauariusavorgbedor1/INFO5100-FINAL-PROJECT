@@ -17,7 +17,7 @@ import java.util.Properties;
 
 /**
  *
- * @Group 1
+ * @author Group 1
  */
 
 //Class to retrieve connection for database and login verfication.

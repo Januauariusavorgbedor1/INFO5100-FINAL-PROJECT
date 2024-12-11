@@ -7,7 +7,7 @@ package controller;
 
 /**
  *
- * @Group 1
+ * @author Group 1
  */
 
 // Data Transfer Object (DTO) class for Products

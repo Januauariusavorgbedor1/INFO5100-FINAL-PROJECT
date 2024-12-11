@@ -19,7 +19,7 @@ import javax.swing.*;
 
 /**
  *
- * @Group 1
+ * @author Group 1
  */
 public class LoginPage extends javax.swing.JFrame {
 
@@ -192,11 +192,11 @@ public class LoginPage extends javax.swing.JFrame {
     // **APPLICATION STARTS EXECUTION HERE**
     public static void main(String[] args) {
         // setting UI theme and LookAndFeel of the application
-        try {
-            javax.swing.UIManager.setLookAndFeel(new FlatMaterialDarkerIJTheme());
-            } catch (UnsupportedLookAndFeelException ex) {
-            Logger.getLogger(LoginPage.class.getName()).log(Level.SEVERE, null, ex);
-        } 
+//        try {
+//            javax.swing.UIManager.setLookAndFeel(new FlatMaterialDarkerIJTheme());
+//            } catch (UnsupportedLookAndFeelException ex) {
+//            Logger.getLogger(LoginPage.class.getName()).log(Level.SEVERE, null, ex);
+//        } 
        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
